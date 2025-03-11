@@ -1,0 +1,5 @@
+.venv
+__pycache__
+ollama-windows-amd64.zip
+ollama-windows-amd64
+cache
