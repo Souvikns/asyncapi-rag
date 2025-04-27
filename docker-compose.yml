@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: AsyncAPI-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+  qdrant:
+    image: qdrant/qdrant
+    container_name: AsyncAPI-qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+    
+
+volumes:
+  ollama_data: 

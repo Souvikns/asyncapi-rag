@@ -1,0 +1,11 @@
+documents:
+  - id: specv3
+    name: Spec v3 documentation
+    download_url: https://raw.githubusercontent.com/asyncapi/spec/refs/heads/master/spec/asyncapi.md
+    type: spec
+  
+  - id: cli
+    name: CLI documentation
+    download_url: https://raw.githubusercontent.com/asyncapi/cli/refs/heads/master/docs/usage.md
+    type: tool
+
