@@ -16,7 +16,6 @@ services:
       - "6333:6333"
     volumes:
       - ./qdrant_storage:/qdrant/storage
-    
 
 volumes:
   ollama_data: 

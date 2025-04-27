@@ -1,10 +1,13 @@
+start:
+	uv run fastapi dev server.py
+
 scrape:
-	python scripts/scrapper.py
+	uv run scripts/scrapper.py
 
 rag:
-	python scripts/scrapper.py
-	python scripts/nltks.py
-	python scripts/rag.py
+	uv run scripts/scrapper.py
+	uv run scripts/nltks.py
+	uv run scripts/rag.py
 
 setup-ollama:
 	curl -X POST http://localhost:11434/api/pull -H "Content-Type: application/json" -d '{"name": "mistral"}'
